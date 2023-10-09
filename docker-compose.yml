@@ -18,10 +18,3 @@ services:
       ## please comment out line below
       - "80:8080"
     restart: always  
-
-  # Watchtower is a service that periodically checks for versions of your docker containers 
-  # and fetches new one. So you always will be up to date.
-  watchtower: 
-    image: v2tec/watchtower
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
